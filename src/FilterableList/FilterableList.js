@@ -1,4 +1,5 @@
 import React from 'react';
+import ListItem from '../ListItem/ListItem';
 
 class FilterableList extends React.Component {
     render() {
@@ -10,7 +11,14 @@ class FilterableList extends React.Component {
          </div>
         );
         
+
     }
+    
+    
 }
+
+FilterableList.defaultProps = {
+    files: []
+};
 
 export default FilterableList;
